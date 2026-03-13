@@ -81,12 +81,12 @@ Base sparse language models that underpin multimodal MoE systems.
 | Deep MoE (Eigen) | — | — | arXiv 2014 | [arXiv](https://arxiv.org/abs/1312.4314) |
 | Sparsely-Gated MoE (Shazeer) | — | 131,072 | ICLR 2017 | [arXiv](https://arxiv.org/abs/1701.06538) |
 | GShard | 600B / — | 2048 | ICLR 2021 | [arXiv](https://arxiv.org/abs/2006.16668) |
-| BASE Layers | — / — | — | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
-| Hash Layers | — / — | — | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
+| BASE Layers | 110B / — | — | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
+| Hash Layers | 4.5B / — | — | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
 | Switch Transformer | 1.6T / — | 2048 | JMLR 2022 | [arXiv](https://arxiv.org/abs/2101.03961) |
 | ST-MoE | 269B / — | — | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
-| Expert Choice Routing | — / — | — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
-| Sparse Upcycling | — / — | — | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
+| Expert Choice Routing | 143B / 10B | — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
+| Sparse Upcycling | 26B / — | — | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
 | MoE Instruction Tuning | 32B / — | — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
 | Mixtral 8x7B / 8x22B | 47B–141B / 13–39B | 8 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2401.04088) |
 | DeepSeekMoE | 145B / 22B | 64+2 | ACL 2024 | [arXiv](https://arxiv.org/abs/2401.06066) |
@@ -100,12 +100,12 @@ Base sparse language models that underpin multimodal MoE systems.
 | DBRX | 132B / 36B | 16 | Blog 2024 | [Blog](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm) |
 | Grok-1 | 314B / — | 8 | Blog 2024 | [GitHub](https://github.com/xai-org/grok-1) |
 | Soft MoE | up to 54.1B / — | 128 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
-| Aux-Loss-Free Routing | — / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
+| Aux-Loss-Free Routing | 3B / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
 | Mixture of A Million Experts | — / — | 1M | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.04153) |
 | Qwen3 235B-A22B | 235B / 22B | 128 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.09388) |
 | GLM-4.5 | 355B / 32B | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.06471) |
-| ReMoE | — / — | — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
-| DirMoE | — / — | — | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
+| ReMoE | 5.73B / — | — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
+| DirMoE | 185M / — | — | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
 
 ---
 
