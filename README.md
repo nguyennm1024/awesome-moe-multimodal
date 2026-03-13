@@ -87,7 +87,7 @@ Base sparse language models that underpin multimodal MoE systems.
 | ST-MoE | 269B / — | 32 | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
 | Expert Choice Routing | 143B / 10B | 64 | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
 | Sparse Upcycling | 26B / — | 32 | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
-| MoE Instruction Tuning | 32B / — | — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
+| MoE Instruction Tuning | 259B / 32B | 64 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
 | Mixtral 8x7B / 8x22B | 47B–141B / 13–39B | 8 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2401.04088) |
 | DeepSeekMoE | 145B / 22B | 64+2 | ACL 2024 | [arXiv](https://arxiv.org/abs/2401.06066) |
 | DeepSeek-V2 | 236B / 21B | 160+2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2405.04434) |
