@@ -99,7 +99,7 @@ Base sparse language models that underpin multimodal MoE systems.
 | Hunyuan-Large | 389B / 52B | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.02265) |
 | DBRX | 132B / 36B | 16 | Blog 2024 | [Blog](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm) |
 | Grok-1 | 314B / — | 8 | Blog 2024 | [GitHub](https://github.com/xai-org/grok-1) |
-| Soft MoE | — / — | 128 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
+| Soft MoE | up to 54.1B / — | 128 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
 | Aux-Loss-Free Routing | — / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
 | Mixture of A Million Experts | — / — | 1M | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.04153) |
 | Qwen3 235B-A22B | 235B / 22B | 128 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.09388) |
@@ -299,14 +299,14 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | RAPHAEL | 3B / — | 6+4 per layer | Space-MoE + Time-MoE | NeurIPS 2023 | [arXiv](https://arxiv.org/abs/2305.18295) |
 | Switch-DiT | 36M–749M / — | 3 | Top-2 timestep | ECCV 2024 | [arXiv](https://arxiv.org/abs/2403.09176) |
 | DiT-MoE | 16B / ~3B | 8–32 | Top-2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11633) |
-| MoESD | — / — | 3 | Top-1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11002) |
-| Mixture of Efficient Diffusion Experts | — / — | 2 | Auto interval selection | ECCV 2024 | [arXiv](https://arxiv.org/abs/2409.15557) |
+| MoESD | ~0.9B / — | 3 | Top-1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11002) |
+| Mixture of Efficient Diffusion Experts | ~400M / — | 2 | Auto interval selection | ECCV 2024 | [arXiv](https://arxiv.org/abs/2409.15557) |
 | EC-DIT | 97B / 8.3B | 64 | Expert choice | ICLR 2025 | [arXiv](https://arxiv.org/abs/2410.02098) |
 | Dense2MoE | 12B / 5.2B | — | — | ICCV 2025 | [arXiv](https://arxiv.org/abs/2510.09094) |
-| DICE | — / — | — | Parallel diffusion MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2411.16786) |
+| DICE | ~16.5B / — | — | Parallel diffusion MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2411.16786) |
 | Expert Race | 2.8B / 0.7B | 32 | Competitive | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.16057) |
-| FaceMoGLE | — / — | — | Global + local | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.00428) |
-| TimeStep Master | — / — | 8 | Asymmetric timestep LoRA | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.07416) |
+| FaceMoGLE | ~12B / — | — | Global + local | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.00428) |
+| TimeStep Master | ~860M / — | 8 | Asymmetric timestep LoRA | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.07416) |
 | DiffMoE | 2B / 0.5B | 16 | Adaptive capacity | ICLR 2026 | [arXiv](https://arxiv.org/abs/2503.14487) |
 | ProMoE | 1.6B / 0.7B | 14 | Prototype-guided | ICLR 2026 | [arXiv](https://arxiv.org/abs/2510.24711) |
 ### Video Generation (§5.2)
