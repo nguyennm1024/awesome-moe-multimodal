@@ -103,8 +103,8 @@ Base sparse language models that underpin multimodal MoE systems.
 | Aux-Loss-Free Routing | 3B / — | 64+2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
 | Mixture of A Million Experts | — / — | 1M | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.04153) |
 | Qwen3 235B-A22B | 235B / 22B | 128 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.09388) |
-| GLM-4.5 | 355B / 32B | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.06471) |
-| ReMoE | 5.73B / — | — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
+| GLM-4.5 | 355B / 32B | 160+1 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.06471) |
+| ReMoE | 5.73B / ~1B | 8 | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
 | DirMoE | 185M / — | 8 | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
 
 ---
@@ -155,10 +155,10 @@ MoE replacing FFN layers in the language model backbone for multimodal tasks.
 | LLaVA-MoD | 2.2B / 2.0B | 4 | Top-2 | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.15881) |
 | Kimi-VL | 16B / 3.2B | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2504.07491) |
 | Qwen3-VL | 30B–235B / 3–22B | 128 | Top-K | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.21631) |
-| GLM-4.5V | 106B / 12B | — | Aux-loss-free | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
+| GLM-4.5V | 106B / 12B | 128+1 | Aux-loss-free | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
 | Llama 4 Maverick | 400B / 17B | 128 | Top-1 | Blog 2025 | [Blog](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) |
 | ~~AsyMoE~~ (withdrawn) | — / — | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.12715) |
-| SMAR | 47B / 13B | — | Soft KL-div modality-aware | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.06406) |
+| SMAR | 47B / 13B | 8 | Soft KL-div modality-aware | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.06406) |
 | Yuan3.0 Flash | 40B / 3.7B | 32 | Top-2 | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.01718) |
 ### MoE in Generation Decoders (§3.4)
 
@@ -220,7 +220,7 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | Aria | 24.9B / 3.9B | 54.9 | 80.3 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2410.05993) |
 | Awaker2.5-VL | 10.8B / — | — | 83.7 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.10669) |
 | DeepSeek-VL2 | 27B / 4.5B | 51.1 | 83.1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2412.10302) |
-| MoVA | ~10B / — | — | — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2404.13046) |
+| MoVA | ~10B / — | — | 70.4 | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2404.13046) |
 | MoME | 7B / — | — | — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.12709) |
 | MoE-LLaVA (Phi-2) | 5.3B / 3.6B | — | 65.2 | TMM 2025 | [arXiv](https://arxiv.org/abs/2401.15947) |
 | LLaVA-MoD | 2.2B / 2.0B | — | 68.9 | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.15881) |
@@ -232,7 +232,7 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | GLM-4.5V | 106B / 12B | 75.4 | 88.2 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
 | Llama 4 Maverick | 400B / 17B | 73.4 | — | Blog 2025 | [Blog](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) |
 | ~~AsyMoE~~ (withdrawn) | — / — | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.12715) |
-| AnyExperts | — / — | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.18314) |
+| AnyExperts | — / — | 49.11 | 79.73 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.18314) |
 | Yuan3.0 Flash | 40B / 3.7B | — | — | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.01718) |
 ### Video Understanding (§4.2)
 
@@ -303,7 +303,7 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | Mixture of Efficient Diffusion Experts | ~400M / — | 2 | Auto interval selection | ECCV 2024 | [arXiv](https://arxiv.org/abs/2409.15557) |
 | EC-DIT | 97B / 8.3B | 64 | Expert choice | ICLR 2025 | [arXiv](https://arxiv.org/abs/2410.02098) |
 | Dense2MoE | 12B / 5.2B | — | — | ICCV 2025 | [arXiv](https://arxiv.org/abs/2510.09094) |
-| DICE | ~16.5B / — | 16+2 | Parallel diffusion MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2411.16786) |
+| DICE | ~16.5B / 3.1B | 16+2 | Parallel diffusion MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2411.16786) |
 | Expert Race | 2.8B / 0.7B | 32 | Competitive | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.16057) |
 | FaceMoGLE | ~12B / — | — | Global + local | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.00428) |
 | TimeStep Master | ~860M / — | 8 | Asymmetric timestep LoRA | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.07416) |
