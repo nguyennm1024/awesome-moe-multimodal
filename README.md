@@ -79,12 +79,12 @@ Base sparse language models that underpin multimodal MoE systems.
 | Model | Params (Total / Active) | Experts | Venue | Paper |
 |:------|:------------------------|:--------|:------|:------|
 | Deep MoE (Eigen) | — | — | arXiv 2014 | [arXiv](https://arxiv.org/abs/1312.4314) |
-| Sparsely-Gated MoE (Shazeer) | — | 131,072 | ICLR 2017 | [arXiv](https://arxiv.org/abs/1701.06538) |
+| Sparsely-Gated MoE (Shazeer) | ~137B / — | 131,072 | ICLR 2017 | [arXiv](https://arxiv.org/abs/1701.06538) |
 | GShard | 600B / — | 2048 | ICLR 2021 | [arXiv](https://arxiv.org/abs/2006.16668) |
-| BASE Layers | 110B / — | 128 | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
-| Hash Layers | 4.5B / — | — | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
+| BASE Layers | 110B / ~1.75B | 128 | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
+| Hash Layers | 4.5B / — | 32 | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
 | Switch Transformer | 1.6T / — | 2048 | JMLR 2022 | [arXiv](https://arxiv.org/abs/2101.03961) |
-| ST-MoE | 269B / — | 32 | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
+| ST-MoE | 269B / ~32B | 32 | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
 | Expert Choice Routing | 143B / 10B | 64 | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
 | Sparse Upcycling | 26B / — | 32 | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
 | MoE Instruction Tuning | 259B / 32B | 64 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
@@ -95,10 +95,10 @@ Base sparse language models that underpin multimodal MoE systems.
 | JetMoE | 8B / 2B | 8 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2404.07413) |
 | OLMoE | 7B / 1B | 64 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.02060) |
 | OpenMoE | 34B / 6.8B | 32 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2402.01739) |
-| Skywork-MoE | 146B / — | 16 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2406.06563) |
+| Skywork-MoE | 146B / 22B | 16 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2406.06563) |
 | Hunyuan-Large | 389B / 52B | 16+1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.02265) |
 | DBRX | 132B / 36B | 16 | Blog 2024 | [Blog](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm) |
-| Grok-1 | 314B / — | 8 | Blog 2024 | [GitHub](https://github.com/xai-org/grok-1) |
+| Grok-1 | 314B / ~78.5B | 8 | Blog 2024 | [GitHub](https://github.com/xai-org/grok-1) |
 | Soft MoE | up to 54.1B / — | 128 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
 | Aux-Loss-Free Routing | 3B / — | 64+2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
 | Mixture of A Million Experts | — / — | 1M | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.04153) |
@@ -153,7 +153,7 @@ MoE replacing FFN layers in the language model backbone for multimodal tasks.
 | MoE-LLaVA | 5.3B / 3.6B | 4 | Top-2 | TMM 2025 | [arXiv](https://arxiv.org/abs/2401.15947) |
 | Uni-MoE | 13–37B / 9–11B | 4–8 | Top-2 | TPAMI 2025 | [arXiv](https://arxiv.org/abs/2405.11273) |
 | LLaVA-MoD | 2.2B / 2.0B | 4 | Top-2 | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.15881) |
-| Kimi-VL | 16B / 3.2B | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2504.07491) |
+| Kimi-VL | 16B / 3.2B | 64+2 | Top-6 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2504.07491) |
 | Qwen3-VL | 30B–235B / 3–22B | 128 | Top-K | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.21631) |
 | GLM-4.5V | 106B / 12B | 128+1 | Aux-loss-free | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
 | Llama 4 Maverick | 400B / 17B | 128 | Top-1 | Blog 2025 | [Blog](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) |
@@ -299,10 +299,10 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | RAPHAEL | 3B / — | 6+4 per layer | Space-MoE + Time-MoE | NeurIPS 2023 | [arXiv](https://arxiv.org/abs/2305.18295) |
 | Switch-DiT | 36M–749M / — | 3 | Top-2 timestep | ECCV 2024 | [arXiv](https://arxiv.org/abs/2403.09176) |
 | DiT-MoE | 16B / ~3B | 8–32 | Top-2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11633) |
-| MoESD | ~0.9B / — | 3 | Top-1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11002) |
+| MoESD | ~0.9B / — | 3 | Soft fixed-weight | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11002) |
 | Mixture of Efficient Diffusion Experts | ~400M / — | 2 | Auto interval selection | ECCV 2024 | [arXiv](https://arxiv.org/abs/2409.15557) |
 | EC-DIT | 97B / 8.3B | 64 | Expert choice | ICLR 2025 | [arXiv](https://arxiv.org/abs/2410.02098) |
-| Dense2MoE | 12B / 5.2B | — | — | ICCV 2025 | [arXiv](https://arxiv.org/abs/2510.09094) |
+| Dense2MoE | 12B / 5.2B | 12+1 | — | ICCV 2025 | [arXiv](https://arxiv.org/abs/2510.09094) |
 | DICE | ~16.5B / 3.1B | 16+2 | Parallel diffusion MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2411.16786) |
 | Expert Race | 2.8B / 0.7B | 32 | Competitive | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.16057) |
 | FaceMoGLE | ~12B / — | — | Global + local | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.00428) |
@@ -357,7 +357,7 @@ Models that handle both understanding and generation in a single MoE architectur
 | MoME | Dual MoE (vision encoder + LLM) | ~7B / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.12709) |
 | Uni-MoE | Unified 5-modality MoE backbone | 13–37B / 9–11B | TPAMI 2025 | [arXiv](https://arxiv.org/abs/2405.11273) |
 | BAGEL | Mixture-of-Transformer-Experts (MoT) | 14B / 7B | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.14683) |
-| EMMA | MoE visual encoder for U+G | ~4B / — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2512.04810) |
+| EMMA | MoE visual encoder for U+G | ~4B / ~4B | arXiv 2025 | [arXiv](https://arxiv.org/abs/2512.04810) |
 | UTAMoE | Task-aware hierarchical routing | 3B / — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.03591) |
 | Ming-Omni | Modality-specific routers | — / 2.8B | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.09344) |
 | LaViDa-O | Elastic Mixture-of-Transformers | 10.4B / 6.4–10.4B | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.19244) |
