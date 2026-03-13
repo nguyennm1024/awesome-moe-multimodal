@@ -82,26 +82,26 @@ Base sparse language models that underpin multimodal MoE systems.
 | Deep MoE (Eigen) | — | — | arXiv 2014 | [arXiv](https://arxiv.org/abs/1312.4314) |
 | GShard | 600B / — | 2048 | ICLR 2021 | [arXiv](https://arxiv.org/abs/2006.16668) |
 | Switch Transformer | 1.6T / — | 2048 | JMLR 2022 | [arXiv](https://arxiv.org/abs/2101.03961) |
-| ST-MoE | — / — | — | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
+| ST-MoE | 269B / — | — | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
 | BASE Layers | — / — | — | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
 | Hash Layers | — / — | — | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
 | Expert Choice Routing | — / — | — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
 | Sparse Upcycling | — / — | — | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
-| MoE Instruction Tuning | — / — | — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
+| MoE Instruction Tuning | 32B / — | — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
 | Mixtral 8x7B / 8x22B | 47B–141B / 13–39B | 8 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2401.04088) |
-| DeepSeekMoE | 145B / 22B | 64+2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2401.06066) |
+| DeepSeekMoE | 145B / 22B | 64+2 | ACL 2024 | [arXiv](https://arxiv.org/abs/2401.06066) |
 | DeepSeek-V2 | 236B / 21B | 160+2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2405.04434) |
 | DeepSeek-V3 | 671B / 37B | 256+1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2412.19437) |
 | JetMoE | 8B / 2B | 8 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2404.07413) |
 | OLMoE | 7B / 1B | 64 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.02060) |
-| OpenMoE | — / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2402.01739) |
-| Skywork-MoE | — / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2406.06563) |
+| OpenMoE | 34B / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2402.01739) |
+| Skywork-MoE | 146B / — | 16 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2406.06563) |
 | Hunyuan-Large | 389B / 52B | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.02265) |
 | DBRX | 132B / 36B | 16 | Blog 2024 | [Blog](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm) |
 | Grok-1 | 314B / — | 8 | Blog 2024 | [GitHub](https://github.com/xai-org/grok-1) |
 | Qwen3 235B-A22B | 235B / 22B | 128 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.09388) |
 | GLM-4.5 | 355B / 32B | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.06471) |
-| Soft MoE | — / — | — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
+| Soft MoE | — / — | 128 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
 | Aux-Loss-Free Routing | — / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
 | ReMoE | — / — | — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
 | DirMoE | — / — | — | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
