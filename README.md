@@ -78,13 +78,13 @@ Base sparse language models that underpin multimodal MoE systems.
 
 | Model | Params (Total / Active) | Experts | Venue | Paper |
 |:------|:------------------------|:--------|:------|:------|
-| Sparsely-Gated MoE (Shazeer) | — | 131,072 | ICLR 2017 | [arXiv](https://arxiv.org/abs/1701.06538) |
 | Deep MoE (Eigen) | — | — | arXiv 2014 | [arXiv](https://arxiv.org/abs/1312.4314) |
+| Sparsely-Gated MoE (Shazeer) | — | 131,072 | ICLR 2017 | [arXiv](https://arxiv.org/abs/1701.06538) |
 | GShard | 600B / — | 2048 | ICLR 2021 | [arXiv](https://arxiv.org/abs/2006.16668) |
-| Switch Transformer | 1.6T / — | 2048 | JMLR 2022 | [arXiv](https://arxiv.org/abs/2101.03961) |
-| ST-MoE | 269B / — | — | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
 | BASE Layers | — / — | — | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
 | Hash Layers | — / — | — | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
+| Switch Transformer | 1.6T / — | 2048 | JMLR 2022 | [arXiv](https://arxiv.org/abs/2101.03961) |
+| ST-MoE | 269B / — | — | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
 | Expert Choice Routing | — / — | — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
 | Sparse Upcycling | — / — | — | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
 | MoE Instruction Tuning | 32B / — | — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
@@ -99,13 +99,13 @@ Base sparse language models that underpin multimodal MoE systems.
 | Hunyuan-Large | 389B / 52B | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.02265) |
 | DBRX | 132B / 36B | 16 | Blog 2024 | [Blog](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm) |
 | Grok-1 | 314B / — | 8 | Blog 2024 | [GitHub](https://github.com/xai-org/grok-1) |
-| Qwen3 235B-A22B | 235B / 22B | 128 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.09388) |
-| GLM-4.5 | 355B / 32B | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.06471) |
 | Soft MoE | — / — | 128 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
 | Aux-Loss-Free Routing | — / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
+| Mixture of A Million Experts | — / — | 1M | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.04153) |
+| Qwen3 235B-A22B | 235B / 22B | 128 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.09388) |
+| GLM-4.5 | 355B / 32B | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.06471) |
 | ReMoE | — / — | — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
 | DirMoE | — / — | — | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
-| Mixture of A Million Experts | — / — | 1M | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.04153) |
 
 ---
 
@@ -123,9 +123,8 @@ MoE applied inside the visual encoder (e.g., ViT layers replaced with MoE FFN).
 | SoftMoE | ViT slot-based soft routing | up to 54.1B / — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
 | MoVA | Mixture of vision expert adapters | ~10B / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2404.13046) |
 | MoNE | Mixture of nested experts for visual tokens | same as baseline / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.19985) |
-| LiMoE | LiDAR + image encoder MoE | 85.8M / — | CVPR 2025 | [arXiv](https://arxiv.org/abs/2501.04004) |
 | Routers in Vision MoE | Empirical routing study | — / — | TMLR 2024 | [arXiv](https://arxiv.org/abs/2401.15969) |
-
+| LiMoE | LiDAR + image encoder MoE | 85.8M / — | CVPR 2025 | [arXiv](https://arxiv.org/abs/2501.04004) |
 ### MoE in Cross-Modal Connectors (§3.2)
 
 MoE in the projection/adapter bridging vision encoder and LLM.
@@ -140,29 +139,27 @@ MoE in the projection/adapter bridging vision encoder and LLM.
 | MoAI | Mixture of visual adapters | ~7B / — | ECCV 2024 | [arXiv](https://arxiv.org/abs/2403.07508) |
 | CuMo | Co-upcycled encoder+connector MoE | 8.3B / 7.8B | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2405.05949) |
 | Awaker2.5-VL | Parameter-efficient LoRA-MoE | 10.8B / — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.10669) |
-
 ### MoE in LLM Backbones (§3.3)
 
 MoE replacing FFN layers in the language model backbone for multimodal tasks.
 
 | Model | Params / Active | Experts | Routing | Venue | Paper |
 |:------|:----------------|:--------|:--------|:------|:------|
-| MoE-LLaVA | 5.3B / 3.6B | 4 | Top-2 | TMM 2025 | [arXiv](https://arxiv.org/abs/2401.15947) |
 | VL-MoE | 5.2B / 1.3B | 32 | Top-2 | EMNLP 2023 | [arXiv](https://arxiv.org/abs/2303.07226) |
 | MM1-MoE | 64B / 3B | 64 | Top-2 | ECCV 2024 | [arXiv](https://arxiv.org/abs/2403.09611) |
 | Gemini 1.5 | — / — | — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2403.05530) |
 | DeepSeek-VL2 | 27B / 4.5B | 64+2 | Top-6 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2412.10302) |
 | Aria | 24.9B / 3.9B | 66 | Top-6 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2410.05993) |
+| MoE-LLaVA | 5.3B / 3.6B | 4 | Top-2 | TMM 2025 | [arXiv](https://arxiv.org/abs/2401.15947) |
 | Uni-MoE | 13–37B / 9–11B | 4–8 | Top-2 | TPAMI 2025 | [arXiv](https://arxiv.org/abs/2405.11273) |
 | LLaVA-MoD | 2.2B / 2.0B | 4 | Top-2 | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.15881) |
 | Kimi-VL | 16B / 3.2B | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2504.07491) |
 | Qwen3-VL | 30B–235B / 3–22B | 128 | Top-K | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.21631) |
 | GLM-4.5V | 106B / 12B | — | Aux-loss-free | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
-| Yuan3.0 Flash | 40B / 3.7B | 32 | Top-2 | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.01718) |
 | Llama 4 Maverick | 400B / 17B | 128 | Top-1 | Blog 2025 | [Blog](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) |
 | ~~AsyMoE~~ (withdrawn) | — / — | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.12715) |
 | SMAR | — / — | — | Soft KL-div modality-aware | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.06406) |
-
+| Yuan3.0 Flash | 40B / 3.7B | 32 | Top-2 | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.01718) |
 ### MoE in Generation Decoders (§3.4)
 
 MoE in diffusion denoisers or autoregressive decoders.
@@ -175,7 +172,6 @@ MoE in diffusion denoisers or autoregressive decoders.
 | DiT-MoE | Text-to-Image | 16B / ~3B | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11633) |
 | EC-DIT | Text-to-Image | 97B / 8.3B | ICLR 2025 | [arXiv](https://arxiv.org/abs/2410.02098) |
 | CogVideoX | Text-to-Video | — / — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.06072) |
-
 ### Full-Stack MoE (§3.5)
 
 MoE applied across multiple components (encoder + connector + backbone + decoder).
@@ -184,9 +180,8 @@ MoE applied across multiple components (encoder + connector + backbone + decoder
 |:------|:---------------|:----------------|:------|:------|
 | MoMa | Early-fusion + modality-expert groups | 7.1B / 1.4B | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.21770) |
 | MoME | Vision encoder + LLM backbone | 7B / 7B | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.12709) |
-| Uni-MoE | Encoder + connector + backbone | 13–37B / 9–11B | TPAMI 2025 | [arXiv](https://arxiv.org/abs/2405.11273) |
 | DeepSeek-VL2 | Encoder + backbone | 27B / 4.5B | arXiv 2024 | [arXiv](https://arxiv.org/abs/2412.10302) |
-
+| Uni-MoE | Encoder + connector + backbone | 13–37B / 9–11B | TPAMI 2025 | [arXiv](https://arxiv.org/abs/2405.11273) |
 ### Routing Strategies (§3.6)
 
 Key routing mechanism papers cited in the survey's routing analysis.
@@ -194,17 +189,17 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | Method | Type | Key Property | Venue | Paper |
 |:-------|:-----|:-------------|:------|:------|
 | Sparsely-Gated MoE | Top-k (token choice) | Original sparse gating | ICLR 2017 | [arXiv](https://arxiv.org/abs/1701.06538) |
+| Hash Routing | Hash / fixed | Deterministic | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
+| BASE Layers | Linear assignment | Optimal dispatch | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
 | Switch Transformer | Top-1 (token choice) | Single expert per token | JMLR 2022 | [arXiv](https://arxiv.org/abs/2101.03961) |
 | Expert Choice | Expert choice | Perfect load balance | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
 | SoftMoE | Soft / fully differentiable | No discrete assignment | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
-| Hash Routing | Hash / fixed | Deterministic | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
-| BASE Layers | Linear assignment | Optimal dispatch | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
 | Aux-loss-free | Bias-based balancing | No auxiliary loss | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
 | ReMoE | ReLU-based continuous | Fully differentiable | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
-| DirMoE | Dirichlet VAE routing | Disentangled selection/weight | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
 | SMAR | Soft modality-aware KL | Preserves language capability | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.06406) |
 | IDA-MoE | Input domain-aware | Decoupled routing from task | ACM MM 2025 | [arXiv](https://arxiv.org/abs/2510.16448) |
 | CL-MoE Dual-Router | Instance + task routing | Continual VQA | CVPR 2025 | [arXiv](https://arxiv.org/abs/2503.00413) |
+| DirMoE | Dirichlet VAE routing | Disentangled selection/weight | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
 
 ---
 
@@ -216,7 +211,6 @@ Key routing mechanism papers cited in the survey's routing analysis.
 |:------|:----------------|:-----|:--------|:------|:------|
 | VLMo | 562M / 375M | — | — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2111.02358) |
 | VL-MoE | 5.2B / 1.3B | — | — | EMNLP 2023 | [arXiv](https://arxiv.org/abs/2303.07226) |
-| MoE-LLaVA (Phi-2) | 5.3B / 3.6B | — | 65.2 | TMM 2025 | [arXiv](https://arxiv.org/abs/2401.15947) |
 | MoCLE | 7.4B / 6.8B | — | 67.4 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2312.12379) |
 | Omni-SMoLA | 5.0B / — | — | — | CVPR 2024 | [arXiv](https://arxiv.org/abs/2312.00968) |
 | LLaVA-MoLE | 7.4B / 6.8B | — | 68.5 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2401.16160) |
@@ -228,6 +222,7 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | DeepSeek-VL2 | 27B / 4.5B | 51.1 | 83.1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2412.10302) |
 | MoVA | ~10B / — | — | — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2404.13046) |
 | MoME | 7B / — | — | — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.12709) |
+| MoE-LLaVA (Phi-2) | 5.3B / 3.6B | — | 65.2 | TMM 2025 | [arXiv](https://arxiv.org/abs/2401.15947) |
 | LLaVA-MoD | 2.2B / 2.0B | — | 68.9 | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.15881) |
 | CL-MoE | 7.2B / — | — | — | CVPR 2025 | [arXiv](https://arxiv.org/abs/2503.00413) |
 | SPMTrack | 115M–1.3B / — | — | — | CVPR 2025 | [arXiv](https://arxiv.org/abs/2503.18338) |
@@ -235,11 +230,10 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | Qwen3-VL-30B-A3B | 30B / 3B | 59.8 | 77.9 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.21631) |
 | Qwen3-VL-235B-A22B | 235B / 22B | **72.9** | **88.3** | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.21631) |
 | GLM-4.5V | 106B / 12B | 75.4 | 88.2 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
-| Yuan3.0 Flash | 40B / 3.7B | — | — | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.01718) |
 | Llama 4 Maverick | 400B / 17B | 73.4 | — | Blog 2025 | [Blog](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) |
 | ~~AsyMoE~~ (withdrawn) | — / — | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.12715) |
 | AnyExperts | — / — | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.18314) |
-
+| Yuan3.0 Flash | 40B / 3.7B | — | — | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.01718) |
 ### Video Understanding (§4.2)
 
 | Model | Key Capability | Venue | Paper |
@@ -249,22 +243,20 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | SPMTrack | Temporal MoE (TMoE) for visual tracking | CVPR 2025 | [arXiv](https://arxiv.org/abs/2503.18338) |
 | Qwen3-VL | Long video reasoning up to 256K tokens | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.21631) |
 | GLM-4.5V | Video + chain-of-thought MoE reasoning | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
-
 ### Audio-Visual Understanding (§4.3)
 
 | Model | Modalities | Key Innovation | Venue | Paper |
 |:------|:-----------|:---------------|:------|:------|
 | AVMOE | Audio+Video+Text | Unimodal + cross-modal adapter experts | NeurIPS 2024 | [arXiv](https://openreview.net/forum?id=SNmuKbU0am) |
+| FuseMoE | Audio+Image+Text (clinical) | Laplace-gated fleximodal fusion | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2402.03226) |
+| Flex-MoE | EHR+Image+Text+Time-series | Dual-router for missing modalities | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2410.08245) |
+| MMoE | Audio+Video+Text | Multimodal interaction experts (EMNLP) | EMNLP 2024 | [arXiv](https://arxiv.org/abs/2311.09580) |
+| EVA-MoE | Audio+Visual speech | Robust AVSR with MoE | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.12370) |
 | MoHAVE | Audio+Video | Hierarchical MoE for AV speech recognition | arXiv 2025 | [arXiv](https://arxiv.org/abs/2502.10447) |
 | Llama-SMoP | Speech+Text | Sparse MoE projectors for AVSR | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.14336) |
 | Qwen3-Omni | Audio+Image+Video+Text | Omni understanding + generation | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.17765) |
-| FuseMoE | Audio+Image+Text (clinical) | Laplace-gated fleximodal fusion | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2402.03226) |
-| Flex-MoE | EHR+Image+Text+Time-series | Dual-router for missing modalities | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2410.08245) |
 | Massively Multimodal FM | 10+ modalities | Dependency-aware MoE router | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.25678) |
 | I2MoE | Multimodal (medical) | Interpretable interaction-aware MoE | ICML 2025 | [arXiv](https://arxiv.org/abs/2505.19190) |
-| MMoE | Audio+Video+Text | Multimodal interaction experts (EMNLP) | EMNLP 2024 | [arXiv](https://arxiv.org/abs/2311.09580) |
-| EVA-MoE | Audio+Visual speech | Robust AVSR with MoE | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.12370) |
-
 ### 3D and Point Cloud Understanding (§4.4)
 
 | Model | Task | Venue | Paper |
@@ -281,7 +273,6 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | MP-LLM (brain MRI) | 3D brain MRI VQA | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.25889) |
 | EMC² | Edge 3D object detection (LiDAR) | ICCV 2025 | [arXiv](https://arxiv.org/abs/2507.04123) |
 | CBDES MoE | BEV 3D perception for autonomous driving | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.07838) |
-
 ### Cross-Modal Retrieval and Alignment (§4.5)
 
 | Model | Task | Venue | Paper |
@@ -318,7 +309,6 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | TimeStep Master | — / — | 8 | Asymmetric timestep LoRA | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.07416) |
 | DiffMoE | 2B / 0.5B | 16 | Adaptive capacity | ICLR 2026 | [arXiv](https://arxiv.org/abs/2503.14487) |
 | ProMoE | 1.6B / 0.7B | 14 | Prototype-guided | ICLR 2026 | [arXiv](https://arxiv.org/abs/2510.24711) |
-
 ### Video Generation (§5.2)
 
 | Model | Task | Key Innovation | Venue | Paper |
@@ -328,7 +318,6 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | MoRE (video) | Video generation | Mixture of Residual Experts | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.08840) |
 | MoC | Long video generation | Mixture of Contexts (sparse attention) | ICLR 2026 | [arXiv](https://arxiv.org/abs/2508.21058) |
 | JavisDiT++ | Joint audio-video | Modality-specific FFN experts | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.19163) |
-
 ### Audio and Speech Generation (§5.3)
 
 | Model | Task | Key Innovation | Venue | Paper |
@@ -340,7 +329,6 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | AudioGenie | Multi-type audio | Training-free multi-agent MoE | ACM MM 2025 | [arXiv](https://arxiv.org/abs/2505.22053) |
 | MoST | Speech+Text | Modality-aware MoE (MAMoE) | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.10272) |
 | MoE Adapter (Audio LLM) | Audio understanding | Sparse MoE adapters, gradient decoupling | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.02967) |
-
 ### 3D Generation (§5.4)
 
 | Model | Task | Venue | Paper |
@@ -349,7 +337,6 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | MoRE (3D) | 3D visual geometry reconstruction | arXiv 2025 | [arXiv](https://arxiv.org/abs/2510.27234) |
 | MoE-GS | Dynamic Gaussian splatting | arXiv 2025 | [arXiv](https://arxiv.org/abs/2510.19210) |
 | MoE3D (reconstruction) | Feed-forward 3D reconstruction | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.05208) |
-
 ### Any-to-Any Generation (§5.5)
 
 | Model | Modalities | Key Innovation | Venue | Paper |
@@ -389,17 +376,15 @@ Models that handle both understanding and generation in a single MoE architectur
 | Tutel | Adaptive expert parallelism + pipelining | MLSys 2023 | [arXiv](https://arxiv.org/abs/2206.03382) |
 | MegaBlocks | Block-sparse MoE kernels, no token dropping | MLSys 2023 | [arXiv](https://arxiv.org/abs/2211.15841) |
 | Scaling Laws Native MM | Scaling laws for native multimodal MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2504.07951) |
-
 ### Inference Optimization
 
 | Method | Key Technique | Venue | Paper |
 |:-------|:--------------|:------|:------|
 | Expert Offloading | LRU CPU-GPU expert paging + prefetch | arXiv 2023 | [arXiv](https://arxiv.org/abs/2312.17238) |
-| MoDES | Dynamic expert skipping (GMLG) | CVPR 2026 | [arXiv](https://arxiv.org/abs/2511.15690) |
 | AnyExperts | Budget-aware dynamic routing | arXiv 2025 | [arXiv](https://arxiv.org/abs/2511.18314) |
 | MoE-Inference-Bench | Comprehensive inference benchmarking | SC'25 2025 | [arXiv](https://arxiv.org/abs/2508.17467) |
 | MoE-CAP | Cost-accuracy-performance benchmarking | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.11415) |
-
+| MoDES | Dynamic expert skipping (GMLG) | CVPR 2026 | [arXiv](https://arxiv.org/abs/2511.15690) |
 ### Scaling Laws and Theory
 
 | Paper | Key Finding | Venue | Paper |
@@ -427,7 +412,6 @@ Models that handle both understanding and generation in a single MoE architectur
 | TrajMoE | Scene-adaptive trajectory planning + RL | arXiv 2025 | [arXiv](https://arxiv.org/abs/2512.07135) |
 | EMC² | Edge MoE for 3D object detection | ICCV 2025 | [arXiv](https://arxiv.org/abs/2507.04123) |
 | CBDES MoE | BEV perception with heterogeneous experts | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.07838) |
-
 ### Robotics and Embodied AI
 
 | Model | Task | Venue | Paper |
@@ -442,7 +426,6 @@ Models that handle both understanding and generation in a single MoE architectur
 | DIBM | Diverse skill behavior models with MoE | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.12397) |
 | TMoW | Test-time mixture of world models | ICLR 2026 | [arXiv](https://arxiv.org/abs/2601.22647) |
 | CogMoE | Cognitive load prediction (EEG/ECG/EDA) | ICLR 2026 | [openreview](https://openreview.net/forum?id=UtbSWdWv0F) |
-
 ### Healthcare and Medical
 
 | Model | Task | Venue | Paper |
@@ -453,7 +436,6 @@ Models that handle both understanding and generation in a single MoE architectur
 | MoE-Health | Robust multimodal healthcare prediction | ACM BCB 2025 | [arXiv](https://arxiv.org/abs/2508.21793) |
 | MP-LLM | 3D brain MRI VQA with hierarchical MoE | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.25889) |
 | I2MoE | Interpretable interaction-aware MoE (medical) | ICML 2025 | [arXiv](https://arxiv.org/abs/2505.19190) |
-
 ### Speech and Audio Processing
 
 | Model | Task | Venue | Paper |
@@ -462,18 +444,18 @@ Models that handle both understanding and generation in a single MoE architectur
 | LR-MoE | Language-routing MoE for code-switching ASR | Interspeech 2023 | [arXiv](https://arxiv.org/abs/2307.05956) |
 | Multilingual DistilWhisper | Multi-task speech via language-specific experts | ICASSP 2024 | [arXiv](https://arxiv.org/abs/2311.01070) |
 | SC-MoE | Switch Conformer MoE for streaming ASR | Interspeech 2024 | [arXiv](https://arxiv.org/abs/2406.18021) |
-| BLR-MoE | Boosted language-routing MoE ASR | ICASSP 2025 | [arXiv](https://arxiv.org/abs/2501.12602) |
-| DLG-MoE | Dynamic language group MoE for CS-ASR | ICASSP 2025 | [arXiv](https://arxiv.org/abs/2407.18581) |
-| CAMEL | Cross-attention MoE for CS-ASR | ICASSP 2025 | [arXiv](https://arxiv.org/abs/2412.12760) |
 | CollabMoE | LID-based collaborative MoE for CS-ASR | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.02050) |
 | Boosting CS ASR MoE | Speech-conditioned LLM + MoE | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.15905) |
 | EVA-MoE | Robust audiovisual ASR MoE | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.12370) |
 | Whisper MixSAE | Unsupervised speaker diarization | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.01963) |
 | MoE Deepfake Detection | Speech deepfake detection | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.16077) |
+| JambaTalk | Speech-driven 3D talking head | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.01627) |
+| BLR-MoE | Boosted language-routing MoE ASR | ICASSP 2025 | [arXiv](https://arxiv.org/abs/2501.12602) |
+| DLG-MoE | Dynamic language group MoE for CS-ASR | ICASSP 2025 | [arXiv](https://arxiv.org/abs/2407.18581) |
+| CAMEL | Cross-attention MoE for CS-ASR | ICASSP 2025 | [arXiv](https://arxiv.org/abs/2412.12760) |
 | VersaBand | Song generation with prompt-based MoE | arXiv 2025 | [arXiv](https://arxiv.org/abs/2504.19062) |
 | Speaker Diarization MoE | MoE for speaker diarization | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.14750) |
 | SparseMERIT Speech | MoE speech emotion recognition + generation | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.08470) |
-| JambaTalk | Speech-driven 3D talking head | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.01627) |
 
 ---
 
@@ -500,14 +482,12 @@ Models that handle both understanding and generation in a single MoE architectur
 | OCRBench | OCR in large multimodal models | Image+Text | 2024 | [arXiv](https://arxiv.org/abs/2305.07895) |
 | VideoMME | Video understanding (short/med/long) | Video+Text | 2025 | [arXiv](https://arxiv.org/abs/2405.21075) |
 | MMVU | Expert-level video understanding | Video+Text | 2025 | [arXiv](https://arxiv.org/abs/2501.12380) |
-
 ### Generation
 
 | Benchmark | Task | Modality | Year | Paper |
 |:----------|:-----|:---------|:-----|:------|
 | GenEval | Text-to-image compositional eval | Image+Text | 2023 | [arXiv](https://arxiv.org/abs/2310.11513) |
 | T2I-CompBench | Compositional text-to-image | Image+Text | 2023 | [arXiv](https://arxiv.org/abs/2307.06350) |
-
 ### Unified and Efficiency
 
 | Benchmark | Task | Venue | Paper |
