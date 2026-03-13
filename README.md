@@ -81,12 +81,12 @@ Base sparse language models that underpin multimodal MoE systems.
 | Deep MoE (Eigen) | — | — | arXiv 2014 | [arXiv](https://arxiv.org/abs/1312.4314) |
 | Sparsely-Gated MoE (Shazeer) | — | 131,072 | ICLR 2017 | [arXiv](https://arxiv.org/abs/1701.06538) |
 | GShard | 600B / — | 2048 | ICLR 2021 | [arXiv](https://arxiv.org/abs/2006.16668) |
-| BASE Layers | 110B / — | — | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
+| BASE Layers | 110B / — | 128 | ICML 2021 | [arXiv](https://arxiv.org/abs/2103.16716) |
 | Hash Layers | 4.5B / — | — | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.04426) |
 | Switch Transformer | 1.6T / — | 2048 | JMLR 2022 | [arXiv](https://arxiv.org/abs/2101.03961) |
-| ST-MoE | 269B / — | — | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
-| Expert Choice Routing | 143B / 10B | — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
-| Sparse Upcycling | 26B / — | — | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
+| ST-MoE | 269B / — | 32 | arXiv 2022 | [arXiv](https://arxiv.org/abs/2202.08906) |
+| Expert Choice Routing | 143B / 10B | 64 | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2202.09368) |
+| Sparse Upcycling | 26B / — | 32 | ICLR 2023 | [arXiv](https://arxiv.org/abs/2212.05055) |
 | MoE Instruction Tuning | 32B / — | — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2305.14705) |
 | Mixtral 8x7B / 8x22B | 47B–141B / 13–39B | 8 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2401.04088) |
 | DeepSeekMoE | 145B / 22B | 64+2 | ACL 2024 | [arXiv](https://arxiv.org/abs/2401.06066) |
@@ -94,18 +94,18 @@ Base sparse language models that underpin multimodal MoE systems.
 | DeepSeek-V3 | 671B / 37B | 256+1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2412.19437) |
 | JetMoE | 8B / 2B | 8 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2404.07413) |
 | OLMoE | 7B / 1B | 64 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2409.02060) |
-| OpenMoE | 34B / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2402.01739) |
+| OpenMoE | 34B / 6.8B | 32 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2402.01739) |
 | Skywork-MoE | 146B / — | 16 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2406.06563) |
-| Hunyuan-Large | 389B / 52B | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.02265) |
+| Hunyuan-Large | 389B / 52B | 16+1 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.02265) |
 | DBRX | 132B / 36B | 16 | Blog 2024 | [Blog](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm) |
 | Grok-1 | 314B / — | 8 | Blog 2024 | [GitHub](https://github.com/xai-org/grok-1) |
 | Soft MoE | up to 54.1B / — | 128 | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
-| Aux-Loss-Free Routing | 3B / — | — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
+| Aux-Loss-Free Routing | 3B / — | 64+2 | arXiv 2024 | [arXiv](https://arxiv.org/abs/2408.15664) |
 | Mixture of A Million Experts | — / — | 1M | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.04153) |
 | Qwen3 235B-A22B | 235B / 22B | 128 | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.09388) |
 | GLM-4.5 | 355B / 32B | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2508.06471) |
 | ReMoE | 5.73B / — | — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2412.14711) |
-| DirMoE | 185M / — | — | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
+| DirMoE | 185M / — | 8 | ICLR 2026 | [arXiv](https://arxiv.org/abs/2602.09001) |
 
 ---
 
@@ -303,7 +303,7 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | Mixture of Efficient Diffusion Experts | ~400M / — | 2 | Auto interval selection | ECCV 2024 | [arXiv](https://arxiv.org/abs/2409.15557) |
 | EC-DIT | 97B / 8.3B | 64 | Expert choice | ICLR 2025 | [arXiv](https://arxiv.org/abs/2410.02098) |
 | Dense2MoE | 12B / 5.2B | — | — | ICCV 2025 | [arXiv](https://arxiv.org/abs/2510.09094) |
-| DICE | ~16.5B / — | — | Parallel diffusion MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2411.16786) |
+| DICE | ~16.5B / — | 16+2 | Parallel diffusion MoE | ICCV 2025 | [arXiv](https://arxiv.org/abs/2411.16786) |
 | Expert Race | 2.8B / 0.7B | 32 | Competitive | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.16057) |
 | FaceMoGLE | ~12B / — | — | Global + local | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.00428) |
 | TimeStep Master | ~860M / — | 8 | Asymmetric timestep LoRA | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.07416) |
