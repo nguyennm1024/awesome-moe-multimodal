@@ -119,7 +119,7 @@ MoE applied inside the visual encoder (e.g., ViT layers replaced with MoE FFN).
 |:------|:-------------|:----------------|:------|:------|
 | V-MoE | ViT FFN layers | 15B / ~2B | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.05974) |
 | LIMoE | Shared vision-language encoder | 5.6B / 675M | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2206.02770) |
-| M³ViT | Multimodal ViT multi-task MoE | — / — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2210.14793) |
+| M³ViT | Multimodal ViT multi-task MoE | ~86M / — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2210.14793) |
 | SoftMoE | ViT slot-based soft routing | up to 54.1B / — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
 | MoVA | Mixture of vision expert adapters | ~10B / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2404.13046) |
 | MoNE | Mixture of nested experts for visual tokens | same as baseline / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.19985) |
@@ -135,7 +135,7 @@ MoE in the projection/adapter bridging vision encoder and LLM.
 | Omni-SMoLA | Soft MoE low-rank adapters | 5.0B / — | CVPR 2024 | [arXiv](https://arxiv.org/abs/2312.00968) |
 | MoCLE | Cluster-conditional LoRA experts | 7.4B / 6.8B | ICLR 2024 | [arXiv](https://arxiv.org/abs/2312.12379) |
 | LLaVA-MoLE | Sparse LoRA experts in connector | 7.4B / 6.8B | arXiv 2024 | [arXiv](https://arxiv.org/abs/2401.16160) |
-| Mixture of LoRA Experts | Systematic LoRA-MoE framework | — / — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2404.13628) |
+| Mixture of LoRA Experts | Systematic LoRA-MoE framework | ~865M / — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2404.13628) |
 | MoAI | Mixture of visual adapters | ~7B / — | ECCV 2024 | [arXiv](https://arxiv.org/abs/2403.07508) |
 | CuMo | Co-upcycled encoder+connector MoE | 8.3B / 7.8B | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2405.05949) |
 | Awaker2.5-VL | Parameter-efficient LoRA-MoE | 10.8B / — | arXiv 2024 | [arXiv](https://arxiv.org/abs/2411.10669) |
