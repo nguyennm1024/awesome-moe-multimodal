@@ -118,7 +118,7 @@ MoE applied inside the visual encoder (e.g., ViT layers replaced with MoE FFN).
 | Model | MoE Location | Params / Active | Venue | Paper |
 |:------|:-------------|:----------------|:------|:------|
 | V-MoE | ViT FFN layers | 15B / ~2B | NeurIPS 2021 | [arXiv](https://arxiv.org/abs/2106.05974) |
-| LIMoE | Shared vision-language encoder | — / — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2206.02770) |
+| LIMoE | Shared vision-language encoder | 5.6B / 675M | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2206.02770) |
 | M³ViT | Multimodal ViT multi-task MoE | — / — | NeurIPS 2022 | [arXiv](https://arxiv.org/abs/2210.14793) |
 | SoftMoE | ViT slot-based soft routing | up to 54.1B / — | ICLR 2024 | [arXiv](https://arxiv.org/abs/2308.00951) |
 | MoVA | Mixture of vision expert adapters | ~10B / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2404.13046) |
@@ -158,7 +158,7 @@ MoE replacing FFN layers in the language model backbone for multimodal tasks.
 | GLM-4.5V | 106B / 12B | — | Aux-loss-free | arXiv 2025 | [arXiv](https://arxiv.org/abs/2507.01006) |
 | Llama 4 Maverick | 400B / 17B | 128 | Top-1 | Blog 2025 | [Blog](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) |
 | ~~AsyMoE~~ (withdrawn) | — / — | — | — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.12715) |
-| SMAR | — / — | — | Soft KL-div modality-aware | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.06406) |
+| SMAR | 47B / 13B | — | Soft KL-div modality-aware | arXiv 2025 | [arXiv](https://arxiv.org/abs/2506.06406) |
 | Yuan3.0 Flash | 40B / 3.7B | 32 | Top-2 | arXiv 2026 | [arXiv](https://arxiv.org/abs/2601.01718) |
 ### MoE in Generation Decoders (§3.4)
 
@@ -171,7 +171,7 @@ MoE in diffusion denoisers or autoregressive decoders.
 | Switch-DiT | Text-to-Image | 36M–749M / — | ECCV 2024 | [arXiv](https://arxiv.org/abs/2403.09176) |
 | DiT-MoE | Text-to-Image | 16B / ~3B | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.11633) |
 | EC-DIT | Text-to-Image | 97B / 8.3B | ICLR 2025 | [arXiv](https://arxiv.org/abs/2410.02098) |
-| CogVideoX | Text-to-Video | — / — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.06072) |
+| CogVideoX | Text-to-Video | 5B / — | ICLR 2025 | [arXiv](https://arxiv.org/abs/2408.06072) |
 ### Full-Stack MoE (§3.5)
 
 MoE applied across multiple components (encoder + connector + backbone + decoder).
@@ -354,7 +354,7 @@ Models that handle both understanding and generation in a single MoE architectur
 | Model | Paradigm | Params / Active | Venue | Paper |
 |:------|:---------|:----------------|:------|:------|
 | MoMa | Early-fusion + modality-expert groups | 7.1B / 1.4B | arXiv 2024 | [arXiv](https://arxiv.org/abs/2407.21770) |
-| MoME | Dual MoE (vision encoder + LLM) | — / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.12709) |
+| MoME | Dual MoE (vision encoder + LLM) | ~7B / — | NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2407.12709) |
 | Uni-MoE | Unified 5-modality MoE backbone | 13–37B / 9–11B | TPAMI 2025 | [arXiv](https://arxiv.org/abs/2405.11273) |
 | BAGEL | Mixture-of-Transformer-Experts (MoT) | 14B / 7B | arXiv 2025 | [arXiv](https://arxiv.org/abs/2505.14683) |
 | EMMA | MoE visual encoder for U+G | ~4B / — | arXiv 2025 | [arXiv](https://arxiv.org/abs/2512.04810) |
