@@ -307,7 +307,7 @@ Key routing mechanism papers cited in the survey's routing analysis.
 | Expert Race | 2.8B / 0.7B | 32 | Competitive | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.16057) |
 | FaceMoGLE | ~12B / — | — | Global + local | arXiv 2025 | [arXiv](https://arxiv.org/abs/2509.00428) |
 | TimeStep Master | ~860M / — | 8 | Asymmetric timestep LoRA | ICML 2025 | [arXiv](https://arxiv.org/abs/2503.07416) |
-| DiffMoE | 2B / 0.5B | 16 | Adaptive capacity | ICLR 2026 | [arXiv](https://arxiv.org/abs/2503.14487) |
+| DiffMoE | 2B / 0.5B | 16 | Adaptive capacity | arXiv 2025 | [arXiv](https://arxiv.org/abs/2503.14487) |
 | ProMoE | 1.6B / 0.7B | 14 | Prototype-guided | ICLR 2026 | [arXiv](https://arxiv.org/abs/2510.24711) |
 ### Video Generation (§5.2)
 
