@@ -4,10 +4,6 @@
 
 A curated list of papers on **Mixture of Experts for Multimodal Intelligence**, maintained to accompany our survey paper.
 
-> **Survey Paper:** *Mixture of Experts for Multimodal Intelligence: A Survey*
-> William Nguyen, Dang Nguyen, Hieu Tran
-> Aitomatic, Inc. · University of California, Los Angeles · University of Massachusetts Amherst
-
 If you find this repository helpful, please consider citing our survey and giving a star!
 
 ---
